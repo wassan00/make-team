@@ -39,13 +39,7 @@ async def team_norem(ctx, specified_num=2):
 async def group(ctx, specified_num=1):
     make_team = MakeTeam()
     msg = make_team.make_specified_len(ctx,specified_num)
-    await ctx.channel.send(msg)
-
-# nipaaaコマンド
-@bot.command()
-async def nipaaa():
-    msg = "gaiji"
-    await ctx.channel.send(msg)    
+    await ctx.channel.send(msg)  
     
 """botの接続と起動"""
 bot.run(token)
